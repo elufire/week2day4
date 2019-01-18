@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#7748aa"
+    tools:context=".UserInput">
+
+
+    <EditText
+        android:id="@+id/edUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"/>
+        <!--app:layout_constraintBottom_toTopOf="@+id/edUserEmail"-->
+
+
+
+    <EditText
+        android:id="@+id/edUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        app:layout_constraintTop_toBottomOf="@+id/edUserName"
+        app:layout_constraintBottom_toTopOf="@+id/edUserPassword"/>
+
+    <EditText
+        android:id="@+id/edUserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        app:layout_constraintTop_toBottomOf="@+id/edUserEmail"/>
+
+    <Button
+        android:id="@+id/btnUserin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Save User Info"
+        app:layout_constraintTop_toBottomOf="@+id/edUserPassword"/>
+
+</android.support.constraint.ConstraintLayout>
